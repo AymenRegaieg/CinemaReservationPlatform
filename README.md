@@ -17,7 +17,7 @@ The backend is developed using Java Enterprise Edition. It handles business logi
 -   JAX-RS for RESTful web services
 
 ### Setup & Running (Backend)
-*(Details to be added on how to set up and run the backend server, e.g., deploying to an application server like WildFly/Tomcat, database setup, etc.)*
+
 
 1.  Ensure you have a compatible application server (e.g., WildFly, Payara, GlassFish).
 2.  Set up the database as per `persistence.xml` and `cinema-ds.xml` configurations.
@@ -49,8 +49,3 @@ The frontend is a single-page application built with React. It provides the user
     ```
     This will typically open the application in your default web browser at `http://localhost:3000`.
 
-## Contributing
-*(Details to be added if you plan to have contributors, e.g., coding standards, pull request process.)*
-
-## License
-*(Details to be added about the project's license, e.g., MIT, Apache 2.0.)*

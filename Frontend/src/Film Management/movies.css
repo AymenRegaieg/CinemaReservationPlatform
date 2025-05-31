@@ -1,0 +1,220 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header and Hero Section */
+.header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1600x600') no-repeat center/cover;
+    height: 60vh;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f9a826;
+}
+
+.hero {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Search Section */
+.search-section {
+    padding: 2rem 5%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#searchBar {
+    width: 50%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+#searchBar:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(249, 168, 38, 0.5);
+}
+
+/* Movie List Section */
+.movie-list {
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.movie-list h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.movie-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.movie-card p {
+    padding: 0 1rem 1rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Expanded movie card styles */
+.movie-card.expanded {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Adjust width and height as necessary */
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: white; /* Optional: Set background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.film-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure text is centered */
+}
+
+.movie-card.expanded .film-details {
+    display: block;
+}
+
+.movie-card:not(.expanded) .film-details {
+    display: none;
+}
+.movie-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, width 0.3s;
+    width: 200px;
+    cursor: pointer;
+}
+
+.movie-card.expanded-horizontal {
+    width: 400px; /* Adjust this value as needed */
+}
+
+.movie-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.film-details {
+    padding: 0 1rem 1rem;
+    color: #666;
+    text-align: left;
+}
+.btn-primary {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f9a826;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+/* Optional: Add hover effect */
+.btn-primary:hover {
+    background-color: #af7b27;
+}
+.add-film-button .btn-primary {
+    background-color: #333 !important; /* Use !important to ensure this rule takes precedence */
+    color: white; /* Ensure text contrast */
+}
